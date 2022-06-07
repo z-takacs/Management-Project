@@ -1,0 +1,36 @@
+
+>> First usergroups created.
+These 6 commands can run at the same time.
+
+
+sudo groupadd -g 1100 IT_Support
+sudo groupadd -g 1110 Creative
+sudo groupadd -g 1120 Marketing
+sudo groupadd -g 1130 Management
+sudo groupadd -g 1140 Facilities
+sudo groupadd -g 1150 Accounts
+
+
+>> Now that we created all the usergroups above.
+
+>> We need to create a users.txt file with users below.
+This file need to be copied over the remote WS/server.
+
+
+IT_Man:Sample!IT_Pw_05:1105:1100:IT Manager:/home/IT_Man:/bin/bash
+ITS_01:Sample!IT_Pw_01:1101:1100:IT Support 01:/home/ITS_01:/bin/bash
+ITS_02:Sample!IT_Pw_02:1102:1100:IT Support 02:/home/ITS_02:/bin/bash
+ITS_03:Sample!IT_Pw_03:1103:1100:IT Support 03:/home/ITS_03:/bin/bash
+Creative_Man:Sample!Cr_Pw_05:1115:1110:Creative Design Manager:/home/Creative_Man:/bin/bash
+Creative_01:Sample!Cr_Pw_01:1111:1110:Creative Design Asst 01:/home/Creative_01:/bin/bash
+Creative_02:Sample!Cr_Pw_02:1112:1110:Creative Design Asst 02:/home/Creative_02:/bin/bash
+Creative_03:Sample!Cr_Pw_03:1113:1110:Creative Design Asst 03:/home/Creative_03:/bin/bash
+Marketing_Man:Sample!Mr_Pw_05:1125:1120:Marketing Manager:/home/Marketing_Man:/bin/bash
+Marketing_01:Sample!Mr_Pw_01:1121:1120:Marketing Asst 01:/home/Marketing_01:/bin/bash
+Marketing_02:Sample!Mr_Pw_02:1122:1120:Marketing Asst 02:/home/Marketing_02:/bin/bash
+Marketing_03:Sample!Mr_Pw_03:1123:1120:Marketing Asst 03:/home/Marketing_03:/bin/bash
+Facilities_Man:Sample!FC_Pw_05:1145:1140:Facilities Manager:/home/Facilities_Man:/bin/bash
+Facilities_Asst:Sample!FC_Pw_01:1141:1140:Facilities Asst:/home/Facilities_Asst:/bin/bash
+Fin_Control:Sample!Fn_Pw_01:1151:1150:Fincancial Controller:/home/Fin_Control:/bin/bash
+
+>> Then with "sudo newusers users.txt" command we execute the file on the remote server/WS.

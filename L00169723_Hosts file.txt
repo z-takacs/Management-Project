@@ -1,0 +1,7 @@
+127.0.0.1       localhost
+
+10.50.25.50 l00169723-sysadws.digi-life.net l00169723-sysadws
+10.50.25.12 www.digi-life.net
+10.50.25.12 l00169723-web.digi-life.net l00169723-web
+10.50.25.13 l00169723-file.digi-life.net l00169723-file
+10.50.25.14 l00169723-db.digi-life.net l00169723-db
